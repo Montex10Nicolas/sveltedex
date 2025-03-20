@@ -1,10 +1,10 @@
 services:
   db:
-    image: postgres
+    image: docker.io/postgres
     restart: always
     ports:
       - 5432:5432
     environment:
-      POSTGRES_USER: root
-      POSTGRES_PASSWORD: mysecretpassword
-      POSTGRES_DB: local
+      POSTGRES_USER: nicolas
+      POSTGRES_PASSWORD: secretpassword
+      POSTGRES_DB: dex
