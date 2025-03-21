@@ -2,6 +2,7 @@ import { paraglide } from "@inlang/paraglide-sveltekit/vite";
 import tailwindcss from "@tailwindcss/vite";
 import { svelteTesting } from "@testing-library/svelte/vite";
 import { sveltekit } from "@sveltejs/kit/vite";
+import { enhancedImages } from "@sveltejs/enhanced-img";
 import { defineConfig } from "vite";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
@@ -15,6 +16,7 @@ const dirname =
 export default defineConfig({
   plugins: [
     tailwindcss(),
+    enhancedImages(),
     sveltekit(),
     paraglide({
       project: "./project.inlang",

@@ -4,7 +4,7 @@
   "trailingComma": "all",
   "printWidth": 80,
   "bracketSpacing": true,
-  "racketSameLine": false,
+  "racketSameLine": true,
   "arrowParens": "always",
   "experimentalOperatorPosition": "start",
   "experimentalTernaries": true,
