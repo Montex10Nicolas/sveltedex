@@ -1,7 +1,5 @@
 import type { PageLoad } from "./$types";
 
 export const load: PageLoad = async ({ params }) => {
-  await fetch("");
-
-  return {};
+  return { hello: "hello" };
 };

@@ -37,10 +37,21 @@
   let inputSearch: HTMLDivElement | undefined = $state();
 </script>
 
+<h1>hello</h1>
+
 <div class="relative h-8">
-  <input bind:this={inputSearch} type="text" bind:value={pokemonSearch} />
+  <label>
+    Pokemon
+    <input
+      data-testid="pokeinput"
+      bind:this={inputSearch}
+      type="text"
+      bind:value={pokemonSearch}
+    />
+  </label>
   {#if showResults && found.length}
     <div
+      data-testid="pokemonfound"
       bind:this={divResults}
       class="top-8 z-50 block max-h-[250px] overflow-scroll rounded-xs bg-amber-200 p-4 hover:cursor-grab"
     >
